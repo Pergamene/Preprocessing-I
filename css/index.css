@@ -173,15 +173,6 @@ body {
 .container p {
   padding: 10px 0;
 }
-.container .flex-rules-vertical-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.container .flex-rules-vertical-top {
-  display: flex;
-  justify-content: space-between;
-}
 .container .nav-container {
   display: flex;
   justify-content: space-between;
