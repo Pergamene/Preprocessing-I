@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,4 +143,96 @@ html {
 html,
 body {
   height: 100%;
+  background-color: #000;
+}
+.container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: 1.6rem;
+  font-family: Oswald;
+  line-height: 2rem;
+}
+.container h1 {
+  font-size: 2.4rem;
+  padding-bottom: 1.5rem;
+}
+.container h2 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  text-decoration: underline;
+}
+.container ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.container p {
+  padding: 10px 0;
+}
+.container .flex-rules-vertical-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .flex-rules-vertical-top {
+  display: flex;
+  justify-content: space-between;
+}
+.container .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #000;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+}
+.container .nav-container a {
+  text-decoration: none;
+  color: #fff;
+  border-left: 1px solid #fff;
+  padding: 15px 25px;
+}
+.container .nav-container a:first-child {
+  border-left: none;
+}
+.container .page-container {
+  margin: 0 5px;
+  border-left: 5px solid #000;
+  border-right: 5px solid #000;
+  padding: 20px;
+}
+.container .content-container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .content-container .half-column-container {
+  padding: 0 10px;
+  width: 50%;
+}
+.container .content-container .two-column {
+  column-count: 2;
+  column-gap: 25px;
+}
+.container .content-container .center {
+  width: auto;
+  margin: 0 auto;
+}
+.container .content-container .accomplishments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .footer-container {
+  padding: 10px 10px 10px 30px;
+  margin-bottom: 5px;
+  background-color: #000;
+  color: #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
 }
